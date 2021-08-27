@@ -1,4 +1,4 @@
-import NavBar from "./Navbar"
+import NavBar from "./NavBar"
 import Footer from "./Footer"
 import Head from 'next/head'
 import Notify from './Notify'
