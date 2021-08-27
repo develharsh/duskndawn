@@ -14,3 +14,25 @@ a {
 * {
   box-sizing: border-box;
 }
+
+input::placeholder{
+  color:blue;
+}
+textarea::placeholder{
+  color:blue;
+}
+#nprogress .bar { background: red !important; height:3px; }
+/* ----------- Home ------------- */
+@import url("./index.css");
+/* ----------- Nav------------- */
+@import url("./nav.css");
+/* ----------- ProperDetail ------------- */
+@import url("./productDetail.css");
+/* ----------- Signup ------------- */
+@import url("./signup.css");
+/* ----------- Create ------------- */
+@import url("./create.css");
+/* ----------- Loading------------- */
+@import url("./loading.css");
+/* ----------- Cartitem------------- */
+@import url("./cartitem.css");
