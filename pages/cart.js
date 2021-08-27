@@ -28,7 +28,7 @@ const My_Cart = () => {
         /*SMS START*/
         let data = 'ORDER ALERT- DUSK\'N DAWN '
         cart.forEach(item => {
-            data += '%0a https://duskndawn.vercel.app/product/' + item._id + ' (Quantity:' + item.quantity + ') %0a '
+            data += '%0a https://duskndawn.in/product/' + item._id + ' (Quantity:' + item.quantity + ') %0a '
         })
         data += 'ORDERED By: %0a Name: ' + name + ' %0a Phone: ' + phone + ' %0a Address:' + addr
         var settings = {
