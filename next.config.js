@@ -1,6 +1,6 @@
 module.exports = {
   env: {
-    "BASE_URL": "https://www.duskndawn.in",
+    "BASE_URL": "https://duskndawn.in",
     "MONGODB_URL": "mongodb+srv://hvs:thakur@cluster0.h3zc7.mongodb.net/duskndawnoffic?retryWrites=true&w=majority",
     'ACCESS_TOKEN_SECRET': "+ . DRIP 9 YELP apple JACK ( \ ~ } : walmart YELP 2 , walmart",
     "CLOUD_UPDATE_PRESET": "duskanddawn",
