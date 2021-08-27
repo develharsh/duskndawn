@@ -40,7 +40,16 @@ const Home = ({ properties }) => {
 
 export async function getServerSideProps(context) {
     const ress = await fetch(`${process.env.BASE_URL}/api/products`)
-    const data = await ress.json()
+	const{req, res}=context;
+	let data=0;
+	try{
+    data = await ress.json()
+	}
+catch(err){
+
+	res.writeHead(302, { Location: "/" })
+            res.end()
+}
     return {
         props: { properties: data }, // will be passed to the page component as props
     }
