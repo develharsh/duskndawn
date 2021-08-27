@@ -21,7 +21,7 @@ const Home = ({ properties }) => {
                     <p style={{ fontWeight: "bold" }}> ₹  {indivProp.price}/-</p>
                 </div>
                 <div className="card-action">
-                    <Link href={`/product/${indivProp._id}`}><a className="btn btn-primary">View Product</a></Link>
+                    <Link href={`/product/${indivProp._id}`}><a className="btn btn-primary" target='_blank'>View Product</a></Link>
                 </div>
             </div>
         </div>
