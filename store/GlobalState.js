@@ -20,10 +20,17 @@ export const DataProvider = ({ children }) => {
         }
     }, [])
     useEffect(() => {
-        const __next__cart01__harshv = JSON.parse(cookie.get('__next__cart01__harshv'))
-        if (__next__cart01__harshv) {
-            dispatch({ type: 'ADD_CART', payload: __next__cart01__harshv })
-        }
+	try{
+		const cook = cookie.get('__next__cart01__harshv')
+	        const __next__cart01__harshv = JSON.parse(cook)
+	        if (__next__cart01__harshv) {
+	            dispatch({ type: 'ADD_CART', payload: __next__cart01__harshv })
+        	}
+	}
+	catch(err){
+		console.log('GlobalState Error')
+		dispatch({ type: 'ADD_CART', payload:[] })
+	}
     }, [])
     useEffect(() => {
         cookie.set('__next__cart01__harshv', JSON.stringify(cart))
