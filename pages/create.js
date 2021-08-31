@@ -31,7 +31,6 @@ const Create = (props) => {
             })
         })
         const res2 = await res.json()
-        console.log(res2)
         if (res2.error) {
             M.toast({ html: res2.error, classes: 'red' })
         }
