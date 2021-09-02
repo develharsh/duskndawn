@@ -21,7 +21,7 @@ input::placeholder{
 textarea::placeholder{
   color:blue;
 }
-#nprogress .bar { background: #7FFF00 !important; height:3px; }
+#nprogress .bar { background: orangered !important; height:3px; }
 /* ----------- Home ------------- */
 @import url("./index.css");
 /* ----------- Nav------------- */
