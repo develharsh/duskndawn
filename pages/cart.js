@@ -104,9 +104,9 @@ const My_Cart = () => {
                         <input type="text" placeholder="Full Name" value={name} onChange={(e) => { setName(e.target.value) }} />
                         <input type="text" placeholder="Phone" maxLength="10" minLength="10" value={phone} onChange={(e) => { setPhone(e.target.value) }} />
                         <textarea id="textarea1" value={addr} placeholder="Proper Address" onChange={(e) => { setAddr(e.target.value) }} className="materialize-textarea"></textarea>
-                        <button className="btn waves-effect waves-light" type="submit" name="action" hidden>
+{/*<button className="btn waves-effect waves-light" type="submit" name="action">
                         <i className="fas fa-shopping-bag"></i> Checkout
-                        </button>
+                        </button>*/}
                     </form>
                 </div>
             </div>
